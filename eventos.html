@@ -1,0 +1,94 @@
+<section class="content-header">
+	<h1>Eventos</h1>
+    <ol class="breadcrumb">
+    	<li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
+        	<li><a href="#">Cátalogo de Eventos</a></li>
+        	<li><a href="#">Eventos vigentes</a></li>
+        </ol>
+</section>
+<!-- Main content -->
+<section class="content">
+
+	<div class="box">
+		<div class="box-header with-border">
+			<h1 class="box-title">Crear evento</h1>
+			<div class="box-tools pull-right">
+            	<button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Minimizar"><i class="fa fa-minus"></i></button>
+            	<button class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Cerrar"><i class="fa fa-times"></i></button>
+        	</div>
+		</div>
+		<div class="box-body">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="form-group">
+						<small>Nombre del evento:</small>
+						<input type="text" class="form-control" name="nombreEvento" placeholder="Nombre del evento">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="form-group">
+						<small>Cliente / Proveedor:</small>
+						<input type="text" class="form-control" name="cProveedor" placeholder="Cliente / Proveedor">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="form-group">
+						<small>Fecha del evento:</small>
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+	                		<input type="date" class="form-control" placeholder="dd/mm/aaaa">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="form-group">
+						<small>Lugar del evento:</small>
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-map-marker"></i></span>
+	                		<input type="text" class="form-control" placeholder="Lugar">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="form-group" style="margin-top:20px">
+						<button type="button" class="btn bg-red btn-block">Invitar contactos</button>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="form-group pull-right" style="margin-top:20px">
+						<button type="button" class="btn bg-olive">Limpiar formulario</button>
+						<button type="button" class="btn bg-navy">Guardar evento</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- Default box -->
+    <div class="box" >
+        <div class="box-header with-border">
+            <h1 class="box-title">Próximos Eventos</h1>
+            <div class="box-tools pull-right">
+            	<button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Minimizar"><i class="fa fa-minus"></i></button>
+            	<button class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Cerrar"><i class="fa fa-times"></i></button>
+        	</div>
+        </div>
+        
+        <div class="box-body" id="proximosEventos">
+			
+        </div><!-- /.box-body -->
+    </div><!-- /.box -->
+	
+	<div class="box box box-info"> 
+		<div class="box-header with-border">
+			<h1 class="box-title">Estadísticas del evento</h1>
+            <div class="box-tools pull-right">
+            	<button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Minimizar"><i class="fa fa-minus"></i></button>
+            	<button class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Cerrar"><i class="fa fa-times"></i></button>
+        	</div>
+		</div>
+		<div class="box-body" id="historicoEventos"></div>
+	</div>
+</section><!-- /.content -->
